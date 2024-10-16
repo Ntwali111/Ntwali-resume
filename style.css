@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 1000px;
+  }
+  
+  /* Projects Section */
+ .project {
+    background-color: blue;
+    padding: 1em;
+    margin-bottom: 1em;
+    max-width: 540px;
+    background: #fff;
+    margin: 100% auto 20px;
+    padding: 40px 30px 70px;
+     border-radius: 10px;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #todo-app {
+    margin-top: 1em;
+  }
+  
+  #todo-app input[type="text"] {
+    padding: 0.5em;
+    width: 80%;
+  }
+  
+  #todo-app ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #todo-app ul li {
+    background-color: #f4f4f4;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    section {
+      padding: 1em;
+    }
+  
+    #todo-app input[type="text"] {
+      width: 100%;
+  
+    }
+  }

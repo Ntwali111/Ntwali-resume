@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#contact {
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Space inside the section */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space above the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#contact h2 {
+    font-size: 28px; /* Font size for the section title */
+    margin-bottom: 15px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+#contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+label {
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+input, textarea {
+    padding: 10px; /* Space inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+    background-color: #003366; /* Dark blue button */
+    color: white; /* White text */
+    padding: 10px; /* Space inside button */
+    border: none; /* No border */
+    border-radius: 2px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+button:hover {
+    background-color: #005799; /* Lighter blue on hover */
+}
+
+
+header {
+    background-color: #356597;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+</style>
+
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section hidden">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
